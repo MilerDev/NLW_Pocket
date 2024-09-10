@@ -7,7 +7,7 @@
 
    ## Peças de uma linguagem 
    
-   - [x] Comentarios
+   - Comentarios
    - Declaraçao de vaiáveis(const, let)
    - Operadoes(atribuiçao , concatenaçao , matematicos, logicos)
    -Tipos de dados(string, number, boolean)
@@ -26,11 +26,29 @@
     Constantes
 
  ## tipos de dados 
-      strings (textos): " ", '' e ``.
-      number : 2 , 1.4 
-      function 
+      - strings (textos): " ", '' e ``.
+      - number : 2 , 1.4 
+      - function 
+      - boolean : true false
 
  ## Operadores  
 
-    Operadores de atribuição de valor     
+   [x]- Operadores de atribuição de valor     
       [ = ] sinal de igual
+   [x] - Operador de contatenação 
+## Estrutura de dados:
+ 
+ ### Arrays:
+
+  [x]uma lista que contem qualque tipos de dado
+
+ ### Objetos:
+
+  [x] Atribuiçao e métodos 
+  [x] criaçao e  manipulaçao de objetos 
+  [x] acesso a propreiedade de objetos 
+
+  ### Functions:
+   - criar, passar argumento
+   - executar 
+   - arrow function / named function  
