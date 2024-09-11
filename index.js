@@ -1,13 +1,39 @@
-let meta = {
-    value: 'ler um livro por mês ',
-    checked : true, 
-}
+const { select, input } = require('@inquirer/prompts'); 
 
-let metas = [
-    meta,  {
-        value: ' caminhar 20 minutos todos dos dias ',
-        checked : false, 
+const start = async() => {
+   
+    while (true) {
+        const opcao = await select({
+            message: 'Menu >' ,
+            choices: [
+                {
+                    name:'Cadastrar metas',
+                    value: 'Cadastrar'
+
+            },
+            {
+                name:'Listar metas',
+                value: 'Listar'
+            },
+            {
+                name:'sair',
+                value: 'Sair'
+            }
+        ]
+        })
+
+        switch (opcao) {
+            case 'Cadastrar':
+                await CadatrarMeta()
+                break;
+            case 'Listar':
+                console.log('vamos listar');
+                break;
+            case 'sair':
+                console.log('Ate a proxima!');
+                return
+        }
     }
-]
+};
 
-console.log(metas[0].value);
+start();

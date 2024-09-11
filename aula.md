@@ -52,3 +52,13 @@
    - criar, passar argumento
    - executar 
    - arrow function / named function  
+# Estrutura de repetição 
+
+   - while
+   
+# condicionais 
+ - switch
+
+  ## modulos em node.js:
+
+  - importaçao de modulos (requir, commonjs)biblioteca ' inquirer' para criar prompts interativos     
