@@ -42,7 +42,8 @@
  
  ### Arrays:
 
-  [x]uma lista que contem qualque tipos de dado
+  [x] uma lista que contem qualque tipos de dado
+  [x]  Métados de array: push, find, forEach
 
  ### Objetos:
 
