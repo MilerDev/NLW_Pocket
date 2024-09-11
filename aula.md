@@ -33,9 +33,11 @@
 
  ## Operadores  
 
-   [x]- Operadores de atribuição de valor     
-      [ = ] sinal de igual
-   [x] - Operador de contatenação 
+   - Operadores de atribuição de valor =    
+      
+   - Operador de contatenação +
+
+   - Operadores de comparação: == =! 1 > 2 1< 2
 ## Estrutura de dados:
  
  ### Arrays:
@@ -55,10 +57,14 @@
 # Estrutura de repetição 
 
    - while
-   
+
 # condicionais 
  - switch
+ - if / else
 
   ## modulos em node.js:
 
   - importaçao de modulos (requir, commonjs)biblioteca ' inquirer' para criar prompts interativos     
+  ## programaçao assincronas e Promises:
+   
+   - uso de funçoes assincronas (async/await)
