@@ -48,42 +48,64 @@ const listarMetas = async() => {
 
 }
 
-    const start = async() => {
-   
+const metasRealizadas = async() => {
+    const realizadas = metas.filter((meta) => {
+        return meta.checked
+    })
+    if(realizadas.length == 0) {
+        console.log('Não existem metas realizadas!')
+        return 
+    }
+    await select({
+        message: 'Metas Realizadas',
+        choices: [...realizadas]
+    })
+
+
+}
+
+    async function start() {
+
     while (true) {
         const opcao = await select({
-            message: 'Menu >' ,
+            message: 'Menu >',
             choices: [
                 {
-                    name:'Cadastrar metas',
+                    name: 'Cadastrar metas',
                     value: 'Cadastrar'
-
-            },
-            {
-                name:'Listar metas',
-                value: 'Listar'
-            },
-            {
-                name:'sair',
-                value:'Sair'
-            }
-        ]
-        })
+                },
+                {
+                    name: 'Listar metas',
+                    value: 'Listar'
+                },
+                {
+                    name: 'metas realizadas',
+                    value: 'realizadas'
+                },
+                {
+                    name: 'sair',
+                    value: 'Sair'
+                }
+            ]
+        });
 
         switch (opcao) {
             case 'Cadastrar':
-                await   CadastrarMeta()
-                console.log(metas)
+                await CadastrarMeta();
+                console.log(metas);
                 break;
             case 'Listar':
-                await listarMetas()
-                console.log('vamos listar');
+                await listarMetas();
+                break;
+            case 'realizadas':
+                await metasRealizadas();
+                
                 break;
             case 'Sair':
                 console.log('Ate a proxima!');
-                return
+                return;
         }
     }
-};
+}
 
 start();

@@ -38,6 +38,8 @@
    - Operador de contatenação +
 
    - Operadores de comparação: == =! 1 > 2 1< 2
+   - spread operator : ...
+
 ## Estrutura de dados:
  
  ### Arrays:
