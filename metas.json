@@ -1,0 +1,11 @@
+[
+  {
+    "value": "tomar 3L de agua por dia",
+    "chacked": true,
+    "checked": true
+  },
+  {
+    "value": "andar de bicicleta 50k",
+    "checked": false
+  }
+]
